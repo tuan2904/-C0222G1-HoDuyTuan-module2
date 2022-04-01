@@ -9,7 +9,7 @@ public class ReadingMoney {
             int ten = (number/10)%10;
             int hundred=number/100;
             String number1="";
-        String number2="";
+         String number2="";
         String number3="";
             if (unit>0){
         switch (unit){
@@ -139,7 +139,7 @@ public class ReadingMoney {
         }else if (hundred >1){
             System.out.println(number3);
         }else if (number < 0){
-            System.out.println(" Enter again");
+            System.out.println(" Mời nhập lại");
         }
 
 }
