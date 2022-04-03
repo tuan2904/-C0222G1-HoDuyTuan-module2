@@ -93,17 +93,46 @@ public class AddElement {
         int index = enter.nextInt();
         System.out.println("Enter the number to insert ");
         int x = enter.nextInt();
-            if (index <=-1){
-                System.out.println(" out");
-                return;
-            }else if (index>= array.length-1){
-                System.out.println("Out");
-                return;
-            }
+
+
         for (int i = 0; i < array.length; i++) {
-            array[index] = x;
+            if (index <= -1 || index >= array.length - 1) {
+                System.out.println(" Không thể nhập ");
+                break;
+            }
         }
+        for (int i = array.length - 1; i >= index; i--) {
+            array[i] = array[i - 1];
+        }
+        array[index] = x;
         System.out.println(Arrays.toString(array));
     }
 }
+
+
+
+
+
+//        for (int i=0;i<array.length;i++){
+//            if (i==x){
+//                for (int j=array.length-1;j>x;j--){
+//                    array[j]=array[j-1];
+//                    break;
+//                } System.out.println(Arrays.toString(array));
+//
+//            }
+//        }
+//        if (index <= -1) {
+//            System.out.println(" out");
+//            return;
+//        } else if (index >= array.length - 1) {
+//            System.out.println("Out");
+//            return;
+//        }
+//        for (int i = 0; i < array.length; i++) {
+//            array[index] = x;
+//
+//        }
+//        System.out.println(Arrays.toString(array));
+
 

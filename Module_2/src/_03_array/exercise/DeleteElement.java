@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class DellElement {
+public class DeleteElement {
     public static void main(String[] args) {
         Scanner enters = new Scanner(System.in);
         int elements = enters.nextInt();
@@ -18,14 +18,14 @@ public class DellElement {
             array[i] = enters.nextInt();
         }
         System.out.println(" show arrays " + Arrays.toString(array));
-        System.out.println(" Enter the location to insert");
+        System.out.println(" Enter element X ");
         int x = enters.nextInt();
         for (int j=0;j<array.length;j++) {
             if (array[j] == x) {
                 count += j;
             }
         }
-            System.out.println("position of x "  + count);
+            System.out.println("Appearance location of "  + count);
         System.out.println(" Enter the location to insert");
         x = enters.nextInt();
             for (int  i = 0; i < array.length ;) {

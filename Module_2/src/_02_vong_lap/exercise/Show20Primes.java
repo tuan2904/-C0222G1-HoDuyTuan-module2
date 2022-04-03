@@ -1,6 +1,6 @@
 package _02_vong_lap.exercise;
-//import java.util.Scanner;
-public class Prime {
+
+public class Show20Primes {
     public static void main(String[] args) {
 //        Scanner number = new Scanner(System.in);
         int count1 = 0;
