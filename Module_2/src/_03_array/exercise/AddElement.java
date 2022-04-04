@@ -117,26 +117,5 @@ public class AddElement {
 
 
 
-//        for (int i=0;i<array.length;i++){
-//            if (i==x){
-//                for (int j=array.length-1;j>x;j--){
-//                    array[j]=array[j-1];
-//                    break;
-//                } System.out.println(Arrays.toString(array));
-//
-//            }
-//        }
-//        if (index <= -1) {
-//            System.out.println(" out");
-//            return;
-//        } else if (index >= array.length - 1) {
-//            System.out.println("Out");
-//            return;
-//        }
-//        for (int i = 0; i < array.length; i++) {
-//            array[index] = x;
-//
-//        }
-//        System.out.println(Arrays.toString(array));
 
 
