@@ -14,18 +14,38 @@ public class MaxElement {
 //    }
 public static void main(String[] args) {
     int[][] array = {
-            {1,2,3,4},
-            {5,9,7,8,6}
+            {1, 2, 3, 4},
+            {5, 9, 7, 8, 6}
     };
 
-    int max=array[0][0];
-    for (int i=0;i<array.length;i++){
-        for (int j=0;j<array[i].length;j++){
-            if (array[i][j]>max){
-                max=array[i][j];
+    MaxNumber(array);
+}
+public static void MaxNumber(int arr[][]){
+    int max = arr[0][0];
+    for (int i=-0;i<arr.length;i++){
+        for (int j=0;j<arr[i].length;j++){
+            if(arr[i][j]>max){
+                max=arr[i][j];
             }
         }
-    }  System.out.println(" The largest element in the array is " + max );
+    }System.out.println(" The largest element in the array is " + max );
+}
+
+
+
+
+
+
+
+//
+//    int max=array[0][0];
+//    for (int i=0;i<array.length;i++){
+//        for (int j=0;j<array[i].length;j++){
+//            if (array[i][j]>max){
+//                max=array[i][j];
+//            }
+//        }
+//    }  System.out.println(" The largest element in the array is " + max );
 
 
 
@@ -55,4 +75,4 @@ public static void main(String[] args) {
 //    }
 //    System.out.println(" The largest element in the array is " + max + " at position " + count1 );
 }
-}
+

@@ -1,5 +1,6 @@
 package _03_array.exercise;
 
+import javax.crypto.spec.PSource;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -10,41 +11,82 @@ public class DeleteElement {
         Scanner enters = new Scanner(System.in);
         int elements = enters.nextInt();
         int[] array = new int[elements];
-        int count=0;
-        int count1=0;
+//        int count = 0;
+//        int count1 = 0;
         System.out.println("Enter elements ");
         for (int i = 0; i < array.length; i++) {
             System.out.println(" Enter elements");
             array[i] = enters.nextInt();
         }
         System.out.println(" show arrays " + Arrays.toString(array));
-        System.out.println(" Enter element X ");
-        int x = enters.nextInt();
-        for (int j=0;j<array.length;j++) {
-            if (array[j] == x) {
-                count += j;
+//        System.out.println(" Enter element X ");
+//        int x = enters.nextInt();
+//        System.out.println(" Enter the location to insert");
+//            x = enters.nextInt();
+//        System.out.println(" Enter element X ");
+//        int x = enters.nextInt();
+//        for (int j=0;j<array.length;j++) {
+//            if (array[j] == x) {
+//                count += j;
+//            }
+//        }
+//            System.out.println("Appearance location of "  + count);
+//        System.out.println(" Enter the location to insert");
+//        x = enters.nextInt();
+//            for (int  i = 0; i < array.length ;) {
+//                if (array[i] == x){
+//                    count1 = i;
+//                    break;
+//                }else {
+//                    i++;
+//                }
+//            }
+//            for (int j = count1; j < array.length ; j++) {
+//                if (j == array.length - 1){
+//                    array[j] = 0;
+//                }else {
+//                    array[j] =array[j + 1];
+//                }
+//            }
+//            System.out.println(Arrays.toString(array));
+//        }
+//
+        Arr(array);
+    }
+        public static void Arr(int [] arr){
+            Scanner enters = new Scanner(System.in);
+            int count=0;
+            int count1=0;
+            System.out.println(" Enter element X ");
+            int number = enters.nextInt();
+            for (int j=0;j<arr.length;j++) {
+                if (arr[j] == number) {
+                    count += j;
+                }
             }
-        }
-            System.out.println("Appearance location of "  + count);
-        System.out.println(" Enter the location to insert");
-        x = enters.nextInt();
-            for (int  i = 0; i < array.length ;) {
-                if (array[i] == x){
+            System.out.println("Appearance location of " + number + " is : "  + count);
+            System.out.println(" Enter the location to insert");
+            number = enters.nextInt();
+
+            for (int  i = 0; i < arr.length ;) {
+                if (arr[i] == number){
                     count1 = i;
                     break;
                 }else {
-                    i++;
+                        i++;
                 }
             }
-            for (int j = count1; j < array.length ; j++) {
-                if (j == array.length - 1){
-                    array[j] = 0;
+            for (int j = count1; j < arr.length ; j++) {
+                if (j == arr.length - 1){
+                    arr[j] = 0;
                 }else {
-                    array[j] =array[j + 1];
+                    arr[j] =arr[j + 1];
                 }
             }
-            System.out.println(Arrays.toString(array));
+            System.out.println(Arrays.toString(arr));
         }
+
+}
 //        int i;
 //        for (i=0;i<array.length;i++) {
 //            if ( x==array[i]){
@@ -88,5 +130,5 @@ public class DeleteElement {
 
 
 
-}
+
 
