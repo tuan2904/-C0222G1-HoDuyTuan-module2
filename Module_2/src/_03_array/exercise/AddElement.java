@@ -1,4 +1,8 @@
 package _03_array.exercise;
+import sun.management.snmp.jvmmib.JVM_MANAGEMENT_MIBOidTable;
+import sun.reflect.generics.scope.MethodScope;
+
+import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.Scanner;
 public class AddElement {

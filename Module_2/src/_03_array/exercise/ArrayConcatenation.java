@@ -20,8 +20,8 @@ public class ArrayConcatenation {
     public static void main(String[] args) {
         int[] array = {1,2,3,4};
         int[] array1={5,6,7,8};
-        int total=array.length+array1.length;
-        int[] array3= new int[total];
+        int totalLength=array.length+array1.length;
+        int[] array3= new int[totalLength];
         int count=0;
         for( int i=0;i<array.length;i++){
                 array3[count]=array[i];
