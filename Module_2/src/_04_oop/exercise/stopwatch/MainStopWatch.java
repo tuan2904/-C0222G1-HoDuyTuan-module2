@@ -2,7 +2,7 @@ package _04_oop.exercise.stopwatch;
 
 import java.util.Arrays;
 
-public class main {
+public class MainStopWatch {
     public static void main(String[] args) {
         StopWatch watch = new StopWatch();
         watch.start();

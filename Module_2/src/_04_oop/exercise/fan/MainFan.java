@@ -1,6 +1,6 @@
 package _04_oop.exercise.fan;
 
-public class main {
+public class MainFan {
     public static void main(String[] args) {
         Fan fan1=new Fan();
         fan1.Fan(3,10,"yellow",true);

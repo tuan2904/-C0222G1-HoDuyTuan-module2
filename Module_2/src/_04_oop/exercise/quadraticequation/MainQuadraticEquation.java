@@ -2,7 +2,7 @@ package _04_oop.exercise.quadraticequation;
 
 import java.util.Scanner;
 
-public class main {
+public class MainQuadraticEquation {
     public static void main(String[] args) {
         Scanner enter = new Scanner(System.in);
         double a, b, c;
