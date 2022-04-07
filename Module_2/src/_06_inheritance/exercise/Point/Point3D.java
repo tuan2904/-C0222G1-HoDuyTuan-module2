@@ -27,12 +27,12 @@ public class Point3D extends Point2D {
                 this.z=z;
 
     }
-    public String getXYZ(){
+    public float[] getXYZ(){
         float[] arr1=new  float[3];
         arr1[0]=getX();
         arr1[1]=getY();
         arr1[2]=getZ();
-        return Arrays.toString(arr1);
+        return arr1;
     }
     @Override
     public String toString() {

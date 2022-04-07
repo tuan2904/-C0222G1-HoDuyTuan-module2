@@ -2,7 +2,7 @@ package _06_inheritance.exercise.Points;
 
 public class MainMovablePoint extends MainPoints  {
     public static void main(String[] args) {
-     MovablePoint mainMovablePoint= new MovablePoint();
+     MovablePoint mainMovablePoint= new MovablePoint(3,4);
 
         System.out.println(mainMovablePoint);
 

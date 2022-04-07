@@ -39,9 +39,9 @@ public class MovablePoint extends Points {
         this.xSpeed=xSpeed;
         this.ySpeed=ySpeed;
     }
-    public String getSpeed(){
+    public float[] getSpeed(){
         float [] arr2=new float[2];
-        return Arrays.toString(arr2);
+        return arr2;
     }
     @Override
     public String toString() {

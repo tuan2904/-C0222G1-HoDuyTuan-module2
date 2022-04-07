@@ -33,9 +33,9 @@ private float y;
         this.x=x;
         this.y=y;
     }
-    public String getXY(){
+    public float[] getXY(){
             float [] arr=new float[2];
-            return Arrays.toString(arr);
+            return arr;
     }
 
     @Override
