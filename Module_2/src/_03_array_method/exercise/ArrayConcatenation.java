@@ -32,9 +32,9 @@ public class ArrayConcatenation {
 //            count++;
 //        }
 //        System.out.println(Arrays.toString(array3));
-        Array(array,array1);
+        array(array,array1);
     }
-        public static void Array(int arr[],int arr1[]){
+        public static void array(int arr[],int arr1[]){
             int totalLength = arr.length + arr1.length;
             int[] array3 = new int[totalLength];
             int count = 0;

@@ -48,9 +48,9 @@ public class DeleteElement {
 //            System.out.println(Arrays.toString(array));
 //        }
 //
-        Arr(array);
+        arr(array);
     }
-        public static void Arr(int [] arr){
+        public static void arr(int [] arr){
             Scanner enters = new Scanner(System.in);
             int count=0;
             int count1=0;
