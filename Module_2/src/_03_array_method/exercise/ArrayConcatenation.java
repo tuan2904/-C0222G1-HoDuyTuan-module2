@@ -39,12 +39,12 @@ public class ArrayConcatenation {
             int[] array3 = new int[totalLength];
             int count = 0;
             for (int i = 0; i < arr.length; i++) {
-                array3[count] = arr[i];
-                count++;
+                array3[count++] = arr[i];
+//                count++;
             }
             for (int i = 0; i < arr1.length; i++) {
-                array3[count] = arr1[i];
-                count++;
+                array3[count++] = arr1[i];
+//                count++;
             }
             System.out.println(Arrays.toString(array3));
         }

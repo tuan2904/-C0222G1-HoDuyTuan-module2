@@ -32,11 +32,11 @@ public class AddElement {
 //        array[index] = x;
 //        System.out.println(Arrays.toString(array));
 //
-        Add(array,index,x);
+        addElement(array,index,x);
     }
 
 
-        public static void Add(int arr[],int index , int index1){
+        public static void addElement(int arr[],int index , int index1){
             for (int i = 0; i < arr.length; i++) {
                 if (index <= -1 || index >= arr.length - 1) {
                     System.out.println(" Không thể nhập ");

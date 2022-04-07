@@ -1,26 +1,13 @@
 package _04_oop.exercise.fan;
 
-class Fan {
-    final int SLOW = 1;
-    final int MEDIUM = 2;
-    final int FAST = 3;
+public class Fan {
+    public static final int SLOW = 1;
+    public static final int MEDIUM = 2;
+    public static final int FAST = 3;
     private boolean on = true;
     private double radius;
     private int speed;
     private String color = "blu";
-
-
-    public int getSLOW() {
-        return SLOW;
-    }
-
-    public int getMEDIUM() {
-        return MEDIUM;
-    }
-
-    public int getFAST() {
-        return FAST;
-    }
 
     public boolean isOn() {
         return on;
@@ -68,14 +55,5 @@ class Fan {
             return (" Color " + this.color + " radius " + this.radius + " fan is off ");
         }
     }
-//    public static void main(String[] args) {
-//        Fan fan1=new Fan();
-//        fan1.Fan(3,10,"yellow",true);
-//        Fan fan2=new Fan();
-//        fan2.Fan(1,5,"blu",false);
-//        System.out.println(fan1);
-//        System.out.println(fan2);
-//    }
+
 }
-
-
