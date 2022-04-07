@@ -1,0 +1,12 @@
+package _06_inheritance.exercise.Points;
+
+public class MainMovablePoint extends MainPoints  {
+    public static void main(String[] args) {
+     MovablePoint mainMovablePoint= new MovablePoint();
+
+        System.out.println(mainMovablePoint);
+
+        MovablePoint movablePoint=new MovablePoint(1,2,4,5);
+        System.out.println(movablePoint.move());
+    }
+}

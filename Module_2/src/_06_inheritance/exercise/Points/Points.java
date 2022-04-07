@@ -1,7 +1,9 @@
 package _06_inheritance.exercise.Points;
 
+import java.util.Arrays;
+
 public class Points {
-private float x;
+    private float x;
 private float y;
 
     public Points() {
@@ -31,7 +33,16 @@ private float y;
         this.x=x;
         this.y=y;
     }
-//    public String getXY(){
-//
-//    }
+    public String getXY(){
+            float [] arr=new float[2];
+            return Arrays.toString(arr);
+    }
+
+    @Override
+    public String toString() {
+        return "Points {" +
+                "x=" + x +
+                ", y=" + y +
+                '}';
+    }
 }

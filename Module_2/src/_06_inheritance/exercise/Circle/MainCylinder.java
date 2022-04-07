@@ -11,5 +11,6 @@ public class MainCylinder {
 
         Cylinder cylinder1=new Cylinder(6,"blu",8);
         System.out.println(cylinder1);
+        System.out.println("Area : " + cylinder1.cylindricalArea());
     }
 }
