@@ -1,6 +1,4 @@
-package _06_inheritance.exercise.Circle;
-
-import com.sun.xml.internal.ws.api.ha.StickyFeature;
+package _06_inheritance.exercise.circle;
 
 public class Circle {
     private double radius;

@@ -1,6 +1,4 @@
-package _06_inheritance.exercise.Circle;
-
-import javax.crypto.spec.PSource;
+package _06_inheritance.exercise.circle;
 
 public class MainCylinder {
     public static void main(String[] args) {

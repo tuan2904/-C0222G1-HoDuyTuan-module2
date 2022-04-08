@@ -1,6 +1,4 @@
-package _06_inheritance.exercise.Points;
-
-import java.util.Arrays;
+package _06_inheritance.exercise.points;
 
 public class MovablePoint extends Points {
     private float  xSpeed;

@@ -1,6 +1,4 @@
-package _06_inheritance.exercise.Points;
-
-import javax.crypto.spec.PSource;
+package _06_inheritance.exercise.points;
 
 public class MainPoints {
     public static void main(String[] args) {

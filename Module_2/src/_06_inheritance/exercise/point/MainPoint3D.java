@@ -1,4 +1,4 @@
-package _06_inheritance.exercise.Point;
+package _06_inheritance.exercise.point;
 
 public class MainPoint3D {
     public static void main(String[] args) {
