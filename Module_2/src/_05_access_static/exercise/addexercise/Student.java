@@ -44,5 +44,6 @@ package _05_access_static.exercise.addexercise;
                     ", point= " + point +"."+
                     "\n";
         }
+
     }
 
