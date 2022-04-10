@@ -4,11 +4,11 @@ import org.w3c.dom.ls.LSOutput;
 
 import javax.crypto.spec.PSource;
 
-public class Rectangle extends Shape {
+public class Rectangle extends Shape implements  Resizeable{
         private double width = 1.0;
         private double length = 1.0;
 
-        public Rectangle() {
+    public Rectangle() {
         }
 
         public Rectangle(double width, double length) {
@@ -16,7 +16,13 @@ public class Rectangle extends Shape {
             this.length = length;
         }
 
-        public double getWidth() {
+    public Rectangle(String color, boolean filler, double width, double length) {
+        super(color, filler);
+        this.width = width;
+        this.length = length;
+    }
+
+    public double getWidth() {
             return width;
         }
 
@@ -40,24 +46,24 @@ public class Rectangle extends Shape {
             return 2 * (width + this.length);
         }
 
+
+
+
+    @Override
+    public void resize(double percent) {
+       this.length += this.length *percent/100;
+        this.width += this.width * percent/100;
+
+    }
+
+
         @Override
         public String toString() {
-            return  "A Rectangle with width="
-                    + getWidth()
-                    + " and length="
-                    + getLength()
-                    + ", which is a subclass of "
-                    + super.toString()
-                    + ", Area=" +
-                    + getArea();
-
-        }
-
-        @Override
-        public void resize(double percent) {
-            System.out.println(" After rectangle : ");
-            setLength(getLength()* (percent/100));
-            setWidth(getWidth()*(percent/100));
-            System.out.println(" ");
+            return
+                    "Rectangle = "
+                    + ", width = "
+                    + width
+                    + ", length = "
+                    + length;
         }
     }

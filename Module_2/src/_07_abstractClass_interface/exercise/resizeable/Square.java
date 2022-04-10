@@ -22,26 +22,25 @@ public class Square extends Shape {
     public void setSide(double side) {
         this.side = side;
     }
-    public double getArea(){
-        return side*side;
-    }
 
-    @Override
-    public String toString() {
-        return "A Square with side="
-                + getSide()
-                + ", which is a subclass of "
-                + super.toString()
-                + ", Area=" +
-                + getArea();
+    public double getArea() {
+        return side * side;
     }
 
 
     @Override
     public void resize(double percent) {
-        System.out.println("After side: ");
-            setSide(getSide()*(percent/100));
-        System.out.println(" ");
+        this.side += this.side * percent / 100;
+    }
+
+    @Override
+    public String toString() {
+        return
+                "Side = " +
+                        side +
+
+                        super.toString();
+    }
 
     }
-}
+

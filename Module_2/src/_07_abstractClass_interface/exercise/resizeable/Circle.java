@@ -3,14 +3,19 @@ package _07_abstractClass_interface.exercise.resizeable;
 public class Circle extends Shape{
         private double radius=1.0;
 
-        public Circle() {
+    public Circle() {
         }
 
         public Circle(double radius) {
             this.radius = radius;
         }
 
-        public double getRadius() {
+    public Circle(String color, boolean filler, double radius) {
+        super(color, filler);
+        this.radius = radius;
+    }
+
+    public double getRadius() {
             return radius;
         }
 
@@ -24,21 +29,17 @@ public class Circle extends Shape{
             return radius*2*Math.PI;
         }
 
-        @Override
-        public String toString() {
-            return  "A Circle with radius="
-                    + getRadius()
-                    + ", which is a subclass of "
-                    + super.toString()
-                    + ", Area=" +
-                    + getArea();
 
-        }
+    @Override
+    public void resize(double percent) {
+        this.radius += this.radius * percent / 100;
+    }
 
-        @Override
-        public void resize(double percent) {
-            System.out.println(" After circle: ");
-            setRadius(getRadius() * (percent/100));
-            System.out.println(" ");
+    @Override
+    public String toString() {
+        return
+                " radius = "
+                + radius
+                + super.toString();
         }
     }

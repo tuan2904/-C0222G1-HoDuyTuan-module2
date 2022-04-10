@@ -15,6 +15,8 @@ public abstract class Shape implements Resizeable {
     public String getColor() {
         return color;
     }
+    public abstract double getArea();
+
 
     public void setColor(String color) {
         this.color = color;

@@ -12,7 +12,7 @@ public class MainColorable {
 
         for (Shape shapes : shape
         ) {
-            System.out.println(" Area : ");
+            System.out.println(" Area of  : ");
             System.out.println(shapes.getArea());
 
             if (shapes instanceof Square) {
