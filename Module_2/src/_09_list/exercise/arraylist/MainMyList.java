@@ -1,9 +1,4 @@
-package _09_list.exercise;
-
-import javax.crypto.spec.PSource;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.NoSuchElementException;
+package _09_list.exercise.arraylist;
 
 public class MainMyList {
     public static void main(String[] args) {
