@@ -31,10 +31,9 @@ public abstract class Shape {
     @Override
     public String toString() {
         return
-                getColor() +
-                        " and "
-                        + (isFiller()?"filler": " not filler");
-
+                "color = " + color
+                + " filler = " + filler
+                ;
     }
 
     public  double getArea() {

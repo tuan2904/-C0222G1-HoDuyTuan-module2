@@ -7,6 +7,12 @@ public class Rectangle extends Shape {
     public Rectangle() {
     }
 
+    public Rectangle(String color, boolean filler, double width, double length) {
+        super(color, filler);
+        this.width = width;
+        this.length = length;
+    }
+
     public Rectangle(double width, double length) {
         this.width = width;
         this.length = length;
@@ -38,11 +44,9 @@ public class Rectangle extends Shape {
 
     @Override
     public String toString() {
-        return  "A Rectangle with width="
-                + getWidth()
-                + " and length="
-                + getLength()
-                + ", which is a subclass of "
+        return  "Rectangle: " +
+                "width " + width +
+                " length " + length
                 + super.toString()
                 + ", Area=" +
                 + getArea();

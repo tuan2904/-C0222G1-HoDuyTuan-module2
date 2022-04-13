@@ -37,9 +37,11 @@ public class Circle extends Shape{
 
     @Override
     public String toString() {
-        return
+        return     "Circle: "+
                 " radius = "
                 + radius
-                + super.toString();
+                + super.toString()
+                + ", Area= "
+                +getArea();
         }
     }

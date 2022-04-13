@@ -28,12 +28,9 @@ public class Square extends Shape implements Colorable {
 
     @Override
     public String toString() {
-        return "A Square with side="
-                + getSide()
-                + ", which is a subclass of "
-                + super.toString()
-                + ", Area=" +
-                + getArea();
+        return "Square : " + "side = " +
+                side + super.toString()
+                + " Area= " + getArea();
     }
 
     @Override

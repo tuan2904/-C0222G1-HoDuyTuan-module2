@@ -60,10 +60,12 @@ public class Rectangle extends Shape implements  Resizeable{
         @Override
         public String toString() {
             return
-                    "Rectangle = "
-                    + ", width = "
+                    "Rectangle : "
+                    + "width = "
                     + width
                     + ", length = "
-                    + length;
+                    + length
+                    + ",Area= "
+                    +getArea();
         }
     }

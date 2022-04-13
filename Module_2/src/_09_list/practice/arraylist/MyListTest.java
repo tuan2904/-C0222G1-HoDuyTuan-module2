@@ -1,6 +1,6 @@
-package _09_list.practice;
+package _09_list.practice.arraylist;
 
-import java.util.List;
+import _09_list.practice.arraylist.MyList;
 
 public class MyListTest {
     public static void main(String[] args) {
