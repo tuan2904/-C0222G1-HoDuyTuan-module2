@@ -4,15 +4,23 @@ import java.util.Scanner;
 import java.util.TreeMap;
 
 public class Map {
-
-//    public static void main(String[] args) {
-//        String string="hello word";
-//
-//
-//        for (java.util.Map.Entry<String,Integer> map1 : .entrySet()
-//             ) {
-//            System.out.println(map1.getKey() + " - " + map1.getValue());
-//        }
-////        for (int i=0;i;){}
+    public void Map(String string) {
+        String[] strings = string.split(" ");
+        TreeMap<String, Integer> treeMap = new TreeMap<>();
+        for (String s : strings) {
+            if (treeMap.containsKey(s)) {
+                treeMap.put(s, treeMap.get(s) + 1);
+            } else {
+                treeMap.put(s, 1);
+            }
+        }
+        System.out.println(treeMap);
     }
-//}}
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        Map map = new Map();
+        String string = input.nextLine().toLowerCase();
+        map.Map(string);
+    }
+}
