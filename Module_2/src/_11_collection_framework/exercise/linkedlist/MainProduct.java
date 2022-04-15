@@ -1,6 +1,5 @@
-package _11_collection_framework.exercise;
+package _11_collection_framework.exercise.linkedlist;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Scanner;
 
