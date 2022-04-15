@@ -37,7 +37,7 @@ public class Square extends Shape {
     public String toString() {
         return "Square: " +
                 "side= " +
-                side +
+                side + ","+
                 super.toString()
                 + ",Area= "
                 + getArea();

@@ -30,7 +30,7 @@ public class Square extends Shape implements Colorable {
     public String toString() {
         return "Square : " + "side = " +
                 side + super.toString()
-                + " Area= " + getArea();
+                + ", Area= " + getArea();
     }
 
     @Override

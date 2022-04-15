@@ -33,9 +33,8 @@ public abstract class Shape implements Resizeable {
     @Override
     public String toString() {
         return
-                getColor() +
-                " and "
-                + (isFiller()?"filler": " not filler");
-
+                "color = " + color
+                        + ", filler = " + filler
+                ;
         }
 }

@@ -32,7 +32,7 @@ public abstract class Shape {
     public String toString() {
         return
                 "color = " + color
-                + " filler = " + filler
+                + ", filler = " + filler
                 ;
     }
 

@@ -40,7 +40,7 @@ public class Circle extends Shape{
         return     "Circle: "+
                 " radius = "
                 + radius
-                + super.toString()
+                +","+ super.toString()
                 + ", Area= "
                 +getArea();
         }
