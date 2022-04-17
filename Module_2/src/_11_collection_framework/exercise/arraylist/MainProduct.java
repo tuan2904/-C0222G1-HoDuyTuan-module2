@@ -3,13 +3,13 @@ package _11_collection_framework.exercise.arraylist;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class MainProduct {
+public class MainProduct  {
     public static void main(String[] args) {
-        Scanner enter = new Scanner(System.in);
         ArrayList<Product> products = new ArrayList<>();
+        Scanner enter = new Scanner(System.in);
         Product product1 = new Product("1", "Bánh", 15500);
-        Product product2 = new Product("2", "kẹo", 15600);
         Product product3 = new Product("3", "Trà", 15700);
+        Product product2 = new Product("2", "kẹo", 15600);
         Product product4 = new Product("4", "Kem", 15800);
 
         products.add(product1);
@@ -29,7 +29,7 @@ public class MainProduct {
             choice = Integer.parseInt(enter.nextLine());
             switch (choice) {
                 case 1:
-                    Products.add();
+                    Products.add(products);
                     break;
                 case 2:
                     Products.set(products);
@@ -41,10 +41,10 @@ public class MainProduct {
                     Products.disPlay(products);
                     break;
                 case 5:
-                    Products.Search(products);
+                    Products.search(products);
                     break;
                 case 6:
-                    Products.chance(products);
+                    Products.sort(products);
                     break;
             }
         }

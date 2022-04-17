@@ -1,9 +1,6 @@
 package _11_collection_framework.exercise.linkedlist;
 
-import java.util.LinkedList;
-
 public class Product {
-   LinkedList<Product> arrayList;
     private String id;
     private String productName;
     private double price;
@@ -33,8 +30,6 @@ public class Product {
         this.price = price;
     }
 
-//    public Object[] product;
-//    Scanner scanner = new Scanner(System.in);
 
     public Product() {
     }

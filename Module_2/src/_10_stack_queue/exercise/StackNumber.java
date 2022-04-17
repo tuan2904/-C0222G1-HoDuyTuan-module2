@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class IntegerStack  {
+public class StackNumber {
     public static void main(String[] args) {
         Scanner enter = new Scanner(System.in);
         Stack<Integer> stacks = new Stack<>();

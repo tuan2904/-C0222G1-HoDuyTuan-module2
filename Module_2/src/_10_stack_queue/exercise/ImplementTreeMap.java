@@ -3,7 +3,7 @@ package _10_stack_queue.exercise;
 import java.util.Scanner;
 import java.util.TreeMap;
 
-public class Map {
+public class ImplementTreeMap {
     public void Map(String string) {
         String[] strings = string.split(" ");
         TreeMap<String, Integer> treeMap = new TreeMap<>();
@@ -19,8 +19,8 @@ public class Map {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        Map map = new Map();
+        ImplementTreeMap implementTreeMap = new ImplementTreeMap();
         String string = input.nextLine().toLowerCase();
-        map.Map(string);
+        implementTreeMap.Map(string);
     }
 }

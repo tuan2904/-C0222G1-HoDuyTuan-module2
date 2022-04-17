@@ -1,8 +1,4 @@
 package _10_stack_queue.exercise;
-
-import sun.awt.Symbol;
-
-import javax.crypto.spec.PSource;
 import java.util.Scanner;
 import java.util.Stack;
 

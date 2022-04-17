@@ -1,21 +1,23 @@
 package _11_collection_framework.exercise.linkedlist;
 
+
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class MainProduct {
+public class MainProduct  {
     public static void main(String[] args) {
+        LinkedList<Product> products=new LinkedList<>();
         Scanner enter = new Scanner(System.in);
-        LinkedList<Product> products = new LinkedList<>();
         Product product1 = new Product("1", "Bánh", 15500);
-        Product product2 = new Product("2", "kẹo", 15600);
         Product product3 = new Product("3", "Trà", 15700);
+        Product product2 = new Product("2", "kẹo", 15600);
         Product product4 = new Product("4", "Kem", 15800);
 
         products.add(product1);
         products.add(product2);
         products.add(product3);
         products.add(product4);
+
         int choice = -1;
         while (choice != 7) {
             System.out.println("1.Thêm sản phẩm: ");
@@ -28,7 +30,7 @@ public class MainProduct {
             choice = Integer.parseInt(enter.nextLine());
             switch (choice) {
                 case 1:
-                    Products.add();
+                    Products.add(products);
                     break;
                 case 2:
                     Products.set(products);
@@ -40,10 +42,10 @@ public class MainProduct {
                     Products.disPlay(products);
                     break;
                 case 5:
-                    Products.Search(products);
+                    Products.search(products);
                     break;
                 case 6:
-                    Products.chance(products);
+                    Products.sort(products);
                     break;
             }
         }

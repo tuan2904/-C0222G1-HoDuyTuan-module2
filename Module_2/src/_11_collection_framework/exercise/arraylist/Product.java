@@ -1,10 +1,8 @@
 package _11_collection_framework.exercise.arraylist;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Product {
-    ArrayList<Product> arrayList;
     private String id;
     private String productName;
     private double price;
@@ -34,8 +32,6 @@ public class Product {
         this.price = price;
     }
 
-    public Object[] product;
-    Scanner scanner = new Scanner(System.in);
 
     public Product() {
     }
