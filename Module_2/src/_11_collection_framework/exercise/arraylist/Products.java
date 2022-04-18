@@ -4,12 +4,19 @@ import java.util.*;
 
 public class Products {
     public static void add(ArrayList<Product> products) {
+
         Scanner enter = new Scanner(System.in);
         System.out.println("Nhập id: ");
         String id = enter.nextLine();
         System.out.println("Nhập tên: ");
         String name = enter.nextLine();
         System.out.println("Nhập giá: ");
+//        for (Product item : products) {
+//            if (item.getId().equals(id)) {
+//                System.out.println("Đã có sản phẩm này");
+//                break;
+//            }
+//        }
         int price = Integer.parseInt(enter.nextLine());
         Product product = new Product(id, name, price);
         products.add(product);
@@ -18,8 +25,8 @@ public class Products {
 //                System.out.println("Đã có sản phẩm này");
 //                break;
 //            } else {
-//
         disPlay(products);
+
     }
 
     public static void remove(ArrayList<Product> products) {
