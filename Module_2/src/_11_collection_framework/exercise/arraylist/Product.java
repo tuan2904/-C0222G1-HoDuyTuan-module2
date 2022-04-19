@@ -1,12 +1,12 @@
 package _11_collection_framework.exercise.arraylist;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Product {
     private String id;
     private String productName;
     private double price;
-
 
     public String getId() {
         return id;
@@ -48,4 +48,5 @@ public class Product {
                 + ",ProductName: " + productName
                 + ", Price: " + price;
     }
+
 }

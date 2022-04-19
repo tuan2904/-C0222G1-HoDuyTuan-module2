@@ -3,7 +3,7 @@ package _11_collection_framework.exercise.arraylist;
 import java.util.*;
 
 public class Products {
-    public static void add(ArrayList<Product> products) {
+    public  void add(ArrayList<Product> products) {
         Scanner enter = new Scanner(System.in);
         for (Product item : products) {
             System.out.println("Nhập id: ");
@@ -31,7 +31,7 @@ public class Products {
         disPlay(products);
     }
 
-    public static void remove(ArrayList<Product> products) {
+    public  void remove(ArrayList<Product> products) {
         disPlay(products);
         Scanner enter = new Scanner(System.in);
         System.out.println("Nhập ID muốn xóa: ");
@@ -51,7 +51,7 @@ public class Products {
     }
 
 
-    public static void search(ArrayList<Product> products) {
+    public  void search(ArrayList<Product> products) {
         Scanner enter = new Scanner(System.in);
         System.out.println("Nhập tên muốn tìm: ");
         String name = enter.nextLine();
@@ -91,7 +91,7 @@ public class Products {
 //        }
 //    }
 
-    public static void sort(ArrayList<Product> products) {
+    public  void sort(ArrayList<Product> products) {
         Scanner enter = new Scanner(System.in);
         System.out.println("Chọn cách thức sắp xếp");
         System.out.println("1. Sắp xếp tăng dần");
@@ -108,7 +108,7 @@ public class Products {
         }
     }
 
-    public static void sortUpAscending(ArrayList<Product> products) {
+    public  void sortUpAscending(ArrayList<Product> products) {
         Collections.sort(products, new Comparator<Product>() {
             @Override
             public int compare(Product o1, Product o2) {
@@ -118,7 +118,7 @@ public class Products {
         disPlay(products);
     }
 
-    public static void sortDescending(ArrayList<Product> products) {
+    public  void sortDescending(ArrayList<Product> products) {
         Collections.sort(products, new Comparator<Product>() {
             @Override
             public int compare(Product o1, Product o2) {
@@ -128,7 +128,7 @@ public class Products {
         disPlay(products);
     }
 
-    public static void set(ArrayList<Product> products) {
+    public  void set(ArrayList<Product> products) {
         System.out.println("Danh sách sản phẩm: ");
         disPlay(products);
         Scanner enter = new Scanner(System.in);
@@ -155,7 +155,7 @@ public class Products {
         disPlay(products);
     }
 
-    public static void disPlay(ArrayList<Product> products) {
+    public  void disPlay(ArrayList<Product> products) {
         for (Product item : products) {
             System.out.println(item.toString());
         }
