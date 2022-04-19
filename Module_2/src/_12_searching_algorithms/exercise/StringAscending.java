@@ -7,7 +7,6 @@ public class StringAscending {
         LinkedList<Character> strings = new LinkedList<>();
         LinkedList<Character> string1 = new LinkedList<>();
         String string = "Welcome";
-//        String [] strings={};
         for (int i = 0; i < string.length(); i++) {
             string1.add(string.charAt(i));
             for (int j = i + 1; j < string.length(); j++) {
