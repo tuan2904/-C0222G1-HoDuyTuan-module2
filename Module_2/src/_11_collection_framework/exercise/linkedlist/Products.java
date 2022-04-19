@@ -5,20 +5,29 @@ import java.util.LinkedList;
 public class Products {
     public static void add(LinkedList<Product> products) {
         Scanner enter = new Scanner(System.in);
+        for (Product item : products) {
+            System.out.println("Nhập id: ");
+            String id = enter.nextLine();
+            if (item.getId().equals(id)) {
+                System.out.println("Đã có sản phẩm này");
+                System.out.println("Mời nhập lại sản phẩm mới. ");
+                break;
+            } else if (!item.getId().equals(id)) {
+                System.out.println("mời thêm sản phẩm");
+                break;
+            }
+        }
+        System.out.println("Nhập sản phẩm mới: ");
         System.out.println("Nhập id: ");
         String id = enter.nextLine();
+
         System.out.println("Nhập tên: ");
         String name = enter.nextLine();
+
         System.out.println("Nhập giá: ");
         int price = Integer.parseInt(enter.nextLine());
-        Product product = new Product(id, name, price);
+       Product product = new Product(id, name, price);
         products.add(product);
-//        for (Product item : products) {
-//            if (item.getId().equals(id)) {
-//                System.out.println("Đã có sản phẩm này");
-//                break;
-//            } else {
-//
         disPlay(products);
     }
 
@@ -46,14 +55,16 @@ public class Products {
         Scanner enter = new Scanner(System.in);
         System.out.println("Nhập tên muốn tìm: ");
         String name = enter.nextLine();
+        boolean flag = false;
         for (Product item : products) {
             if (item.getProductName().contains(name)) {
+                flag = true;
                 System.out.println("Có sản phẩm:" + item);
                 break;
-            } else {
-                System.out.println(" Không có sản phẩm muốn tìm");
-                break;
             }
+        }
+        if (!flag) {
+            System.out.println("Không có sản phẩm này");
         }
     }
 
