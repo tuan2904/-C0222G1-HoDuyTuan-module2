@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class MainProduct  {
     public static void main(String[] args) {
+     Products product5 = new Products();
         LinkedList<Product> products=new LinkedList<>();
         Scanner enter = new Scanner(System.in);
         Product product1 = new Product("1", "Bánh", 15500);
@@ -19,7 +20,7 @@ public class MainProduct  {
         products.add(product4);
 
         int choice = -1;
-        while (choice != 7) {
+        while (true) {
             System.out.println("1.Thêm sản phẩm: ");
             System.out.println("2.Sửa thông tin sản phẩm: ");
             System.out.println("3.Xóa sản phẩm theo ID: ");
@@ -30,22 +31,25 @@ public class MainProduct  {
             choice = Integer.parseInt(enter.nextLine());
             switch (choice) {
                 case 1:
-                    Products.add(products);
+                    product5.add(products);
                     break;
                 case 2:
-                    Products.set(products);
+                    product5.set(products);
                     break;
                 case 3:
-                    Products.remove(products);
+                    product5.remove(products);
                     break;
                 case 4:
-                    Products.disPlay(products);
+                    product5.disPlay(products);
                     break;
                 case 5:
-                    Products.search(products);
+                    product5.search(products);
                     break;
                 case 6:
-                    Products.sort(products);
+                    product5.sort(products);
+                    break;
+                case 7:
+                    System.exit(0);
                     break;
             }
         }

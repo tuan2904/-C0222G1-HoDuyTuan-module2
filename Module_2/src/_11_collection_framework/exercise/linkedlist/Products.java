@@ -3,7 +3,7 @@ package _11_collection_framework.exercise.linkedlist;
 import java.util.*;
 import java.util.LinkedList;
 public class Products {
-    public static void add(LinkedList<Product> products) {
+    public  void add(LinkedList<Product> products) {
         Scanner enter = new Scanner(System.in);
         for (Product item : products) {
             System.out.println("Nhập id: ");
@@ -31,7 +31,7 @@ public class Products {
         disPlay(products);
     }
 
-    public static void remove(LinkedList<Product> products) {
+    public  void remove(LinkedList<Product> products) {
         disPlay(products);
         Scanner enter = new Scanner(System.in);
         System.out.println("Nhập ID muốn xóa: ");
@@ -51,7 +51,7 @@ public class Products {
     }
 
 
-    public static void search(LinkedList<Product> products) {
+    public  void search(LinkedList<Product> products) {
         Scanner enter = new Scanner(System.in);
         System.out.println("Nhập tên muốn tìm: ");
         String name = enter.nextLine();
@@ -87,7 +87,7 @@ public class Products {
 //        }
 //    }
 
-    public static void sort(LinkedList<Product> products) {
+    public  void sort(LinkedList<Product> products) {
         Scanner enter = new Scanner(System.in);
         System.out.println("Chọn cách thức sắp xếp");
         System.out.println("1. Sắp xếp tăng dần");
@@ -104,7 +104,7 @@ public class Products {
         }
     }
 
-    public static void sortUpAscending(LinkedList<Product> products) {
+    public  void sortUpAscending(LinkedList<Product> products) {
         Collections.sort(products, new Comparator<Product>() {
             @Override
             public int compare(Product o1, Product o2) {
@@ -114,7 +114,7 @@ public class Products {
         disPlay(products);
     }
 
-    public static void sortDescending(LinkedList<Product> products) {
+    public  void sortDescending(LinkedList<Product> products) {
         Collections.sort(products, new Comparator<Product>() {
             @Override
             public int compare(Product o1, Product o2) {
@@ -124,7 +124,7 @@ public class Products {
         disPlay(products);
     }
 
-    public static void set(LinkedList<Product> products) {
+    public  void set(LinkedList<Product> products) {
         System.out.println("Danh sách sản phẩm: ");
         disPlay(products);
         Scanner enter = new Scanner(System.in);
@@ -175,7 +175,7 @@ public class Products {
 //        }
 }
 
-    public static void disPlay(LinkedList<Product> products) {
+    public  void disPlay(LinkedList<Product> products) {
         for (Product item : products) {
             System.out.println(item.toString());
         }
