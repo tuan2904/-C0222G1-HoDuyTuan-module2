@@ -4,8 +4,8 @@ import java.util.*;
 
 public class MainPerson {
     public static void main(String[] args) {
-        Queue<Person> nam = new LinkedList<>();
-        Queue<Person> nu = new LinkedList<>();
+        Queue<Person> male = new LinkedList<>();
+        Queue<Person> female = new LinkedList<>();
 //        System.out.println("List before sorting: ");
         Person[] customers = new Person[5];
         customers[0] = new Person("Tuan", true, 18);
@@ -17,17 +17,17 @@ public class MainPerson {
 
         for (Person arr : customers) {
             if (arr.isGender()) {
-                nam.add(arr);
+                male.add(arr);
             } else {
-                nu.add(arr);
+                female.add(arr);
             }
         }
         List<Person> lists = new ArrayList<>();
-        while (nu.size() > 0) {
-            lists.add(nu.remove());
+        while (female.size() > 0) {
+            lists.add(female.remove());
         }
-        while (nam.size() > 0) {
-            lists.add(nam.remove());
+        while (male.size() > 0) {
+            lists.add(male.remove());
         }
         System.out.println("List after sorting: ");
         for (Person item : lists) {
