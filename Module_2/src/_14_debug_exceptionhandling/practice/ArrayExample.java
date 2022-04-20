@@ -1,4 +1,4 @@
-package _15_debug_exceptionhandling.practice;
+package _14_debug_exceptionhandling.practice;
 
 import java.util.Random;
 import java.util.Scanner;
