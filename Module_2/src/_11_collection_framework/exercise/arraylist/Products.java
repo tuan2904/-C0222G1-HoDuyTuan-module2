@@ -31,7 +31,7 @@ public class Products {
         disPlay(products);
     }
 
-    public  void remove(ArrayList<Product> products) {
+    public void remove(ArrayList<Product> products) {
         disPlay(products);
         Scanner enter = new Scanner(System.in);
         System.out.println("Nhập ID muốn xóa: ");
