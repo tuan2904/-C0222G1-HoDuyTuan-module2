@@ -1,11 +1,6 @@
 package _16_io_test_file.exercise.copyfile;
 
-import _14_debug_exceptionhandling.exercise.IllegalTriangleException;
-import _16_io_test_file.practice.th1.ReadAndWriteFile;
-import jdk.internal.util.xml.impl.Input;
-
 import java.io.*;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -49,9 +44,9 @@ public class CopyFile {
     }
 
     public static void main(String[] args) {
-        List<String> list = CopyFile.copyFile("src\\_16_io_test_file\\exercise\\copyfile\\sourcefile");
+        List<String> list = CopyFile.copyFile("src\\_16_io_test_file\\exercise\\copyfile\\sourcefile.txt");
         for (String item:list) {
-            CopyFile.writer("src\\_16_io_test_file\\exercise\\copyfile\\targetfile",item);
+            CopyFile.writer("src\\_16_io_test_file\\exercise\\copyfile\\targetfile.txt",item);
         }
 
     }
