@@ -33,7 +33,7 @@ public class ProductManagement {
     }
 
     public static void showList() {
-        products = Method.readFile("src\\_17_binaryfile_serialization\\exercise\\productfile.txt");
+        products = Method.readFile();
 
         for (Product item : products) {
             System.out.println(item);
@@ -41,7 +41,7 @@ public class ProductManagement {
     }
 
     public static void addProduct() {
-        products = Method.readFile("src\\_17_binaryfile_serialization\\exercise\\productfile.txt");
+        products = Method.readFile();
         while (true) {
 
             System.out.println("Nhập id sản phẩm");
@@ -67,7 +67,7 @@ public class ProductManagement {
                 products.add(product);
                 System.out.println("Thêm thành công");
                 try {
-                    Method.writeFile("src\\_17_binaryfile_serialization\\exercise\\productfile.txt", products);
+                    Method.writeFile( products);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -79,7 +79,7 @@ public class ProductManagement {
     }
 
     public static void searchProduct() {
-        products = Method.readFile("src\\_17_binaryfile_serialization\\exercise\\productfile.txt");
+        products = Method.readFile();
         System.out.println("Nhập sản phẩm");
         String nameProduct = scanner.nextLine();
         boolean flag = false;

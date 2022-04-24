@@ -4,10 +4,9 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Method<PRODUCT_FILE> {
+public class Method {
     private static final String PRODUCT="src\\_17_binaryfile_serialization\\exercise\\productfile.txt";
-    public static void writeFile(String path, List<Product> product) throws IOException {
-//        File file = new File(path);
+    public static void writeFile( List<Product> product) throws IOException {
         FileOutputStream fileOutputStream;
         ObjectOutputStream objectOutputStream = null;
 
@@ -23,8 +22,7 @@ public class Method<PRODUCT_FILE> {
         }
     }
 
-    public static List<Product> readFile(String path) {
-//        File file = new File(path);
+    public static List<Product> readFile() {
         FileInputStream fileInputStream;
         ObjectInputStream objectInputStream;
         List<Product> productList = new ArrayList<>();

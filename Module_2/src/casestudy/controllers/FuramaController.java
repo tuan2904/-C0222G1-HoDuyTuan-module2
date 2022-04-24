@@ -1,15 +1,20 @@
 package casestudy.controllers;
 
+import casestudy.services.EmployeeService;
+import casestudy.services.impl.CustomerServiceIml;
+import casestudy.services.impl.EmployeeServiceIml;
+
 import java.util.Scanner;
 
 public class FuramaController {
+    static CustomerServiceIml customerServiceIml= new CustomerServiceIml();
+    static EmployeeServiceIml employeeService=new EmployeeServiceIml() ;
     public static void main(String[] args) {
         displayMainMenu();
     }
     Scanner enter = new Scanner(System.in);
     public static void displayMainMenu() {
         Scanner enter = new Scanner(System.in);
-
         int choice = -1;
         while (true) {
             System.out.println("1.Employee Management: ");
@@ -46,7 +51,7 @@ public class FuramaController {
 
     public static void employeeManagement() {
         Scanner enter = new Scanner(System.in);
-        int choice = -1;
+        int choice ;
         while (true) {
             System.out.println("1\tDisplay list employees");
             System.out.println("2\tAdd new employee ");
@@ -56,10 +61,11 @@ public class FuramaController {
 
             switch (choice){
                 case 1:
+                    employeeService.display();
                     break;
-                case 2:
+                case 2:employeeService.addNew();
                     break;
-                case 3:
+                case 3:employeeService.edit();
                     break;
                 case 4:
                     break;
@@ -71,9 +77,9 @@ public class FuramaController {
         Scanner enter = new Scanner(System.in);
         int choice = -1;
         while (choice != 5) {
-            System.out.println("1\tDisplay list customers");
-            System.out.println("2\tAdd new customer ");
-            System.out.println("3\tEdit customer ");
+            System.out.println("1\tDisplay list facility");
+            System.out.println("2\tAdd new facility ");
+            System.out.println("3\tDisplay list facility maintenance ");
             System.out.println("4\tReturn main menu ");
             choice = Integer.parseInt(enter.nextLine());
 
@@ -95,13 +101,14 @@ public class FuramaController {
         int choice = -1;
         while (true) {
             System.out.println("1\tDisplay list facility");
-            System.out.println("2\tAdd new facility ");
-            System.out.println("3\tDisplay list facility maintenance  ");
+            System.out.println("2\tAdd new customer ");
+            System.out.println("3\tEdit customer ");
             System.out.println("4\tReturn main menu ");
             choice = Integer.parseInt(enter.nextLine());
 
             switch (choice){
                 case 1:
+
                     break;
                 case 2:
                     break;
