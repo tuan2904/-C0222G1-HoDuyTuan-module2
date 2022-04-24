@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Method {
+public class Function {
     private static final String PRODUCT="src\\_17_binaryfile_serialization\\exercise\\productfile.txt";
     public static void writeFile( List<Product> product) throws IOException {
         FileOutputStream fileOutputStream;
