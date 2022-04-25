@@ -17,4 +17,18 @@ public class Area {
         float area = weidth * height;
         System.out.println(" Area is : " + area);
     }
+
+
+//        public static Scanner input(){
+//            Scanner scanner = new Scanner(System.in);
+//            return scanner;
+//        }
+//
+//    public static void main(String[] args) {
+//        System.out.println("Nhập");
+//        input().nextInt();
+//        System.out.println("Nhập b");
+//        input().nextLine();
+//
+//    }
 }

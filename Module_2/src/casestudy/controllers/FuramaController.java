@@ -124,12 +124,12 @@ public class FuramaController {
         Scanner enter = new Scanner(System.in);
         int choice = -1;
         while (true) {
-            System.out.println("1.\tAdd new booking");
-            System.out.println("2.\tDisplay list booking ");
-            System.out.println("3.\tCreate new contracts  ");
-            System.out.println("4.\tDisplay list contracts ");
-            System.out.println("5.\tEdit contracts ");
-            System.out.println("6.\tReturn main menu ");
+            System.out.println("1.Add new booking");
+            System.out.println("2.Display list booking ");
+            System.out.println("3.Create new contracts  ");
+            System.out.println("4.Display list contracts ");
+            System.out.println("5.Edit contracts ");
+            System.out.println("6.Return main menu ");
             choice = Integer.parseInt(enter.nextLine());
 
             switch (choice){
