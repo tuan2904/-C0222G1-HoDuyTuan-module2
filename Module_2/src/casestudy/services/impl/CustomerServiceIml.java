@@ -29,7 +29,7 @@ public class CustomerServiceIml implements CustomerService {
         System.out.println("Nhập giới tính");
         String gender =scanner.nextLine();
         System.out.println("Nhập cmnd");
-        int idCar=Integer.parseInt(scanner.nextLine());
+        String idCar=scanner.nextLine();
         System.out.println("Nhập email:");
 //        String email=scanner.nextLine();
 //        System.out.println("Nhập chức vụ");
@@ -52,10 +52,5 @@ public class CustomerServiceIml implements CustomerService {
                 System.out.println(e);
             }
         }display();
-    }
-
-    @Override
-    public void delete() {
-
     }
 }

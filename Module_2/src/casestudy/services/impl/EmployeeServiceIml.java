@@ -1,6 +1,5 @@
 package casestudy.services.impl;
 
-import casestudy.controllers.FuramaController;
 import casestudy.models.Employee;
 
 import casestudy.services.EmployeeService;
@@ -30,7 +29,7 @@ public class EmployeeServiceIml implements EmployeeService {
         System.out.println("Nhập giới tính");
         String gender =scanner.nextLine();
         System.out.println("Nhập cmnd");
-        int idCar=Integer.parseInt(scanner.nextLine());
+        String idCar=scanner.nextLine();
         System.out.println("Nhập email:");
         String email=scanner.nextLine();
         System.out.println("Nhập chức vụ");
@@ -49,14 +48,11 @@ public class EmployeeServiceIml implements EmployeeService {
         System.out.println("Nhập name muốn tim: ");
         String name=scanner.nextLine();
         for (Employee e:list) {
-            if (e.getName().contains(name)){
+            if (e.getAddress().contains(name)){
                 System.out.println(e);
             }
         }display();
     }
 
-    @Override
-    public void delete() {
 
-    }
 }

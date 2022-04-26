@@ -28,7 +28,7 @@ public class Employee extends Person {
                     String name,
                     int age,
                     String gender,
-                    int address,
+                    String address,
                     String email,
                     String level,
                     String position,

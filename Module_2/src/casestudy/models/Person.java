@@ -14,12 +14,12 @@ public abstract class Person {
         this.gender = gender;
     }
 
-    private int address;
+    private String address;
 
     public Person() {
     }
 
-    public Person(int id, String name, int age, String gender, int address) {
+    public Person(int id, String name, int age, String gender, String address) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -51,11 +51,11 @@ public abstract class Person {
         this.age = age;
     }
 
-    public int getAddress() {
+    public String getAddress() {
         return address;
     }
 
-    public void setAddress(int address) {
+    public void setAddress(String address) {
         this.address = address;
     }
 

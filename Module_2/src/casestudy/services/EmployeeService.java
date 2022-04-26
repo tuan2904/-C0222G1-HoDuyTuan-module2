@@ -9,7 +9,4 @@ public interface EmployeeService extends Service {
 
     @Override
     void edit();
-
-    @Override
-    void delete();
 }

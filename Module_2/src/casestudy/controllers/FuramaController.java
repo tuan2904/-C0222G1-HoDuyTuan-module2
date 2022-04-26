@@ -1,18 +1,23 @@
 package casestudy.controllers;
 
-import casestudy.services.EmployeeService;
+
 import casestudy.services.impl.CustomerServiceIml;
 import casestudy.services.impl.EmployeeServiceIml;
+import casestudy.services.impl.FacilityServiceIml;
 
 import java.util.Scanner;
 
 public class FuramaController {
-    static CustomerServiceIml customerServiceIml= new CustomerServiceIml();
-    static EmployeeServiceIml employeeService=new EmployeeServiceIml() ;
+    static FacilityServiceIml facilityManagement = new FacilityServiceIml();
+    static CustomerServiceIml customerServiceIml = new CustomerServiceIml();
+    static EmployeeServiceIml employeeService = new EmployeeServiceIml();
+
     public static void main(String[] args) {
         displayMainMenu();
     }
+
     Scanner enter = new Scanner(System.in);
+
     public static void displayMainMenu() {
         Scanner enter = new Scanner(System.in);
         int choice = -1;
@@ -32,7 +37,7 @@ public class FuramaController {
                     customerManagement();
                     break;
                 case 3:
-                    facilityManagement();
+                    facilityList();
                     break;
                 case 4:
                     bookingManagement();
@@ -41,17 +46,17 @@ public class FuramaController {
                     promotionManagement();
                     break;
                 case 6:
+                    System.exit(0);
+                    System.out.println("Đã thoát khỏi menu.");
                     break;
-                default:
-                    System.out.println("Nhập lại");
-                    break;
+
             }
         }
     }
 
     public static void employeeManagement() {
         Scanner enter = new Scanner(System.in);
-        int choice ;
+        int choice;
         while (true) {
             System.out.println("1\tDisplay list employees");
             System.out.println("2\tAdd new employee ");
@@ -59,13 +64,15 @@ public class FuramaController {
             System.out.println("4\tReturn main menu ");
             choice = Integer.parseInt(enter.nextLine());
 
-            switch (choice){
+            switch (choice) {
                 case 1:
                     employeeService.display();
                     break;
-                case 2:employeeService.addNew();
+                case 2:
+                    employeeService.addNew();
                     break;
-                case 3:employeeService.edit();
+                case 3:
+                    employeeService.edit();
                     break;
                 case 4:
                     break;
@@ -73,7 +80,7 @@ public class FuramaController {
         }
     }
 
-    public static void facilityManagement() {
+    public static void facilityList() {
         Scanner enter = new Scanner(System.in);
         int choice = -1;
         while (choice != 5) {
@@ -83,14 +90,17 @@ public class FuramaController {
             System.out.println("4\tReturn main menu ");
             choice = Integer.parseInt(enter.nextLine());
 
-            switch (choice){
+            switch (choice) {
                 case 1:
+                    facilityManagement.displayList();
                     break;
                 case 2:
+                    addFacility();
                     break;
                 case 3:
                     break;
                 case 4:
+                    displayMainMenu();
                     break;
             }
         }
@@ -106,15 +116,18 @@ public class FuramaController {
             System.out.println("4\tReturn main menu ");
             choice = Integer.parseInt(enter.nextLine());
 
-            switch (choice){
+            switch (choice) {
                 case 1:
-
+                    customerServiceIml.display();
                     break;
                 case 2:
+                    customerServiceIml.addNew();
                     break;
                 case 3:
+                    customerServiceIml.edit();
                     break;
                 case 4:
+                    displayMainMenu();
                     break;
             }
         }
@@ -132,7 +145,7 @@ public class FuramaController {
             System.out.println("6.Return main menu ");
             choice = Integer.parseInt(enter.nextLine());
 
-            switch (choice){
+            switch (choice) {
                 case 1:
                     break;
                 case 2:
@@ -153,7 +166,7 @@ public class FuramaController {
             System.out.println("2.\tDisplay list customers get voucher ");
             System.out.println("3.\tReturn main menu ");
             choice = Integer.parseInt(enter.nextLine());
-            switch (choice){
+            switch (choice) {
                 case 1:
                     break;
                 case 2:
@@ -161,6 +174,37 @@ public class FuramaController {
                 case 3:
                     break;
                 case 4:
+                    break;
+            }
+        }
+    }
+
+    public static void addFacility() {
+        Scanner enter = new Scanner(System.in);
+        int choice = -1;
+        while (choice != 5) {
+            System.out.println("1. Add Villa");
+            System.out.println("2. Add House");
+            System.out.println("3. Add Room ");
+            System.out.println("4\tReturn main menu ");
+            choice = Integer.parseInt(enter.nextLine());
+            switch (choice) {
+                case 1:
+                    facilityManagement.addNewVilla();
+                    facilityList();
+                    break;
+                case 2:
+                    facilityManagement.addNewHouse();
+                    facilityList();
+
+                    break;
+                case 3:
+                    facilityManagement.addNewRoom();
+                    facilityList();
+
+                    break;
+                case 4:
+                    facilityList();
                     break;
             }
         }
